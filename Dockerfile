@@ -10,9 +10,8 @@ WORKDIR /app
 # Copy package.json và package-lock.json (nếu có)
 COPY package*.json ./
 
-# Cài đặt dependencies với cache layer
-RUN npm ci --only=production && \
-    npm cache clean --force
+# Cài đặt tất cả dependencies (bao gồm devDependencies)
+RUN npm install
 
 # Copy toàn bộ source code
 COPY . .

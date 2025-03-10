@@ -7,4 +7,12 @@ export default defineConfig({
   css: {
     postcss: './postcss.config.cjs',
   },
+  server: {
+    host: true,
+    port: 5174,
+    allowedHosts: [
+      'localhost',
+      'chatbot.andyanh.id.vn'
+    ]
+  }
 })

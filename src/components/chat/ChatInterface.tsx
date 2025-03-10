@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Paper, TextInput, Button, ScrollArea, Text } from '@mantine/core';
+import { Paper, TextInput, Button, ScrollArea } from '@mantine/core';
 import { FaPaperPlane } from 'react-icons/fa';
 import ChatMessage from './ChatMessage';
 import { Message } from '../../types/chat';

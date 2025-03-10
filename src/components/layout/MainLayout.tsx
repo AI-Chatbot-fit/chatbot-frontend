@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { AppShell, Burger } from '@mantine/core';
+import { AppShell } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Sidebar from './Sidebar';
 import Header from './Header';
